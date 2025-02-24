@@ -395,7 +395,7 @@ body._lock {
   transform: translate(0, -50%);
   width: 18px;
   height: 18px;
-  background: url("../../img/icons/icons.svg#arrow2") center/contain no-repeat;
+  background: url("../img/icons/icons.svg#arrow2") center/contain no-repeat;
   transition: all 0.5s ease;
 }
 
@@ -1902,7 +1902,7 @@ body._lock {
   transform: translate(0, -50%);
   width: 24px;
   height: 24px;
-  background: url("../../img/icons/icons.svg#arrow3") center/contain no-repeat;
+  background: url("../img/icons/icons.svg#arrow3") center/contain no-repeat;
 }
 
 .pages {
@@ -2024,7 +2024,7 @@ body._lock {
   transform: translate(0, -40%);
   width: 18px;
   height: 18px;
-  background: url("../../img/icons/icons.svg#arrow2") center/contain no-repeat;
+  background: url("../img/icons/icons.svg#arrow2") center/contain no-repeat;
   transition: all 0.5s ease;
 }
 
