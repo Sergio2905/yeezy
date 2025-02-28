@@ -162,6 +162,7 @@ body::before {
   width: 450px;
   aspect-ratio: 663/320;
   background: url("../img/decor.svg") top left/contain no-repeat;
+  pointer-events: none;
 }
 
 body._lock {
@@ -1192,10 +1193,9 @@ body._lock {
 
 .start::before {
   content: "";
-  right: 0;
+  right: 20px;
   top: 80px;
-  width: 554px;
-  transform: translate(18%, 0);
+  width: 500px;
   aspect-ratio: 1/1;
   position: absolute;
   background: url("../img/start/decor1.webp") center/contain no-repeat;
@@ -1205,10 +1205,9 @@ body._lock {
 .start::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 20px;
   bottom: 60px;
-  width: 361px;
-  transform: translate(-18%, 0);
+  width: 300px;
   aspect-ratio: 1/1;
   background: url("../img/start/decor2.webp") center/contain no-repeat;
 }
@@ -1696,9 +1695,9 @@ body._lock {
 .faq__wrapper::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 722px;
+  top: 20px;
+  right: 20px;
+  width: 600px;
   aspect-ratio: 722/678;
   background: url("../img/faq/decor1.svg") top right/contain no-repeat;
 }
@@ -1706,9 +1705,9 @@ body._lock {
 .faq__wrapper::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 711px;
+  bottom: 20px;
+  left: 20px;
+  width: 600px;
   aspect-ratio: 711/915;
   background: url("../img/faq/decor2.svg") bottom left/contain no-repeat;
 }
@@ -2753,11 +2752,11 @@ body._lock {
   }
 
   .faq__wrapper::before {
-    width: calc(300px + 422 * (100vw - 320px) / 1230);
+    width: calc(300px + 300 * (100vw - 320px) / 1230);
   }
 
   .faq__wrapper::after {
-    width: calc(300px + 411 * (100vw - 320px) / 1230);
+    width: calc(300px + 300 * (100vw - 320px) / 1230);
   }
 
   .faq__title {
