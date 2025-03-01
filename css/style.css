@@ -2301,6 +2301,7 @@ body._lock {
 .single__body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -2311,6 +2312,18 @@ body._lock {
   height: auto;
   border-radius: 30px;
   margin: 15px 0;
+}
+
+.single__body h2,
+.single__body h3,
+.single__body h4,
+.single__body h5,
+.single__body h6,
+.single__body p,
+.single__body ol,
+.single__body ul,
+.single__body time {
+  width: 100%;
 }
 
 .single__body h2 {
@@ -2387,6 +2400,7 @@ body._lock {
 }
 
 .single__category {
+  align-self: flex-start;
   text-transform: uppercase;
   color: var(--green);
   font-weight: 700;
@@ -2394,6 +2408,7 @@ body._lock {
 }
 
 .single__tag-list {
+  align-self: flex-start;
   margin-top: 15px;
   display: flex;
   align-items: center;
