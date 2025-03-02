@@ -308,6 +308,11 @@ body._lock {
   fill: #BEBEBE;
 }
 
+.navigation__prev.lock,
+.navigation__next.lock {
+  display: none;
+}
+
 .navigation__prev svg,
 .navigation__next svg {
   width: 50%;
@@ -1273,6 +1278,7 @@ body._lock {
 
 .start__item:nth-child(even) {
   flex-direction: row-reverse;
+  text-align: right;
 }
 
 .start__item:nth-child(even) .start__icon {
@@ -1361,6 +1367,7 @@ body._lock {
 .statistics__title {
   font-size: 3.75rem;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 .statistics__item {
@@ -1430,6 +1437,7 @@ body._lock {
   font-size: 3.75rem;
   font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .reviews__intro {
@@ -1553,6 +1561,7 @@ body._lock {
   font-weight: 900;
   margin-bottom: 50px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .conferences__body {
@@ -1608,7 +1617,25 @@ body._lock {
 }
 
 .news {
-  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0 140px;
+}
+
+.news::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: var(--white);
+  overflow: hidden;
+  border-radius: 100px 100px 0 0;
+}
+
+.news__container {
+  position: relative;
 }
 
 .news__title {
@@ -1625,12 +1652,12 @@ body._lock {
 
 .news__slider {
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
 .news__slide {
   background: #EDF2F5;
   border-radius: 20px;
-  overflow: hidden;
   max-width: 420px;
 }
 
@@ -1855,6 +1882,7 @@ body._lock {
   font-weight: 900;
   margin-bottom: 30px;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .contacts__item {
@@ -2138,20 +2166,7 @@ body._lock {
 }
 
 .tags {
-  position: relative;
   margin-top: 50px;
-}
-
-.tags::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120%;
-  background: rgb(173, 230, 224);
-  background: linear-gradient(180deg, rgb(173, 230, 224) 0%, rgb(255, 255, 255) 100%);
-  border-radius: 100px 100px 0 0;
 }
 
 .tags__container {
@@ -2301,7 +2316,6 @@ body._lock {
 .single__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -2312,18 +2326,6 @@ body._lock {
   height: auto;
   border-radius: 30px;
   margin: 15px 0;
-}
-
-.single__body h2,
-.single__body h3,
-.single__body h4,
-.single__body h5,
-.single__body h6,
-.single__body p,
-.single__body ol,
-.single__body ul,
-.single__body time {
-  width: 100%;
 }
 
 .single__body h2 {
@@ -2400,7 +2402,6 @@ body._lock {
 }
 
 .single__category {
-  align-self: flex-start;
   text-transform: uppercase;
   color: var(--green);
   font-weight: 700;
@@ -2408,7 +2409,6 @@ body._lock {
 }
 
 .single__tag-list {
-  align-self: flex-start;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -2725,6 +2725,11 @@ body._lock {
     font-size: calc(1rem + 2 * (100vw - 20rem) / 1230);
   }
 
+  .conferences {
+    padding-top: calc(20px + 80 * (100vw - 320px) / 1230);
+    padding-bottom: calc(50px + 90 * (100vw - 320px) / 1230);
+  }
+
   .conferences::before {
     border-top-left-radius: calc(30px + 70 * (100vw - 320px) / 1230);
     border-top-right-radius: calc(30px + 70 * (100vw - 320px) / 1230);
@@ -2744,7 +2749,13 @@ body._lock {
   }
 
   .news {
-    margin-top: calc(50px + 50 * (100vw - 320px) / 1230);
+    padding-top: calc(20px + 80 * (100vw - 320px) / 1230);
+    padding-bottom: calc(50px + 90 * (100vw - 320px) / 1230);
+  }
+
+  .news::before {
+    border-top-left-radius: calc(30px + 70 * (100vw - 320px) / 1230);
+    border-top-right-radius: calc(30px + 70 * (100vw - 320px) / 1230);
   }
 
   .news__title {
@@ -2806,11 +2817,6 @@ body._lock {
 
   .filter__categories {
     margin-top: calc(20px + 10 * (100vw - 320px) / 1230);
-  }
-
-  .tags::before {
-    border-top-left-radius: calc(20px + 80 * (100vw - 320px) / 1230);
-    border-top-right-radius: calc(20px + 80 * (100vw - 320px) / 1230);
   }
 
   .blog {
@@ -2955,6 +2961,7 @@ body._lock {
 
   .start__item:nth-child(even) {
     flex-direction: row;
+    text-align: left;
   }
 
   .start__item:nth-child(even) .start__icon {
@@ -3309,6 +3316,10 @@ body._lock {
 
   .advantages__icon {
     margin: 0 auto 18px;
+  }
+
+  .advantages__footer {
+    text-align: left;
   }
 
   .advantages__controls {
