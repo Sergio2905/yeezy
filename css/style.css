@@ -182,10 +182,9 @@ body._lock {
 }
 
 .container {
-  max-width: 1550px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 50px;
 }
 
 .page {
@@ -1577,7 +1576,7 @@ body._lock {
   background: #EDF2F5;
   border-radius: 20px;
   overflow: hidden;
-  max-width: 420px;
+  max-width: 500px;
 }
 
 .conferences__image {
@@ -1658,7 +1657,7 @@ body._lock {
 .news__slide {
   background: #EDF2F5;
   border-radius: 20px;
-  max-width: 420px;
+  max-width: 500px;
 }
 
 .news__image {
@@ -2994,17 +2993,13 @@ body._lock {
   .start__name {
     font-size: 1.375rem;
   }
-
-  .conferences__slide {
-    max-width: 500px;
-  }
-
-  .news__slide {
-    max-width: 500px;
-  }
 }
 
 @media (max-width: 992px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header__btn {
     display: none;
   }
